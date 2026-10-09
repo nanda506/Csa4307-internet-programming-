@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CO1 AT2 - HTTP Response & DOM Structure Analysis</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <h1>HTTP Response & DOM Structure Diagnostics</h1>
+    <p>Assessment Tool 2 - Medium Data Interpretation Analysis</p>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Question 1: Corrected HTTP Response Header</h2>
+      <pre class="code-block"><code>HTTP/1.1 200 OK
+Date: Mon, 01 Apr 2026 10:00:00 GMT
+Content-Type: text/html; charset=UTF-8
+Content-Length: 150
+Connection: keep-alive</code></pre>
+      <p class="status-badge success">✓ Content-Length corrected from negative (-150) to valid octet count (150).</p>
+    </section>
+
+    <section class="card">
+      <h2>Question 2: Corrected W3C DOM Structure</h2>
+      <div class="demo-box">
+        <p>HelloWorld</p>
+      </div>
+      <p class="status-badge success">✓ DOCTYPE, closing &lt;/p&gt; tag, and charset meta tags successfully validated.</p>
+    </section>
+
+    <section class="card">
+      <h2>Question 4: Accessible HTML Inspection Fix</h2>
+      <header>
+        <h3>Welcome</h3>
+      </header>
+      <p>This is a paragraph with fully closed semantic tags and an accessible image element.</p>
+      <img src="https://via.placeholder.com/600x300?text=Accessible+Image+Demo" alt="A descriptive placeholder illustrating WCAG image guidelines" width="600" height="300" loading="lazy" class="responsive-img">
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 SIMATS Engineering - CSA43 Internet Programming</p>
+  </footer>
+
+</body>
+</html>

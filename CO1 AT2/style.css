@@ -1,0 +1,183 @@
+:root {
+  --primary-color: #0284c7;
+  --primary-hover: #0369a1;
+  --bg-color: #0f172a;
+  --card-bg: #1e293b;
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --border-color: #334155;
+  --success-bg: rgba(34, 197, 94, 0.15);
+  --success-border: #22c55e;
+  --warning-bg: rgba(239, 68, 68, 0.15);
+  --warning-border: #ef4444;
+  --radius: 8px;
+  --font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.site-header {
+  background-color: var(--card-bg);
+  border-bottom: 1px solid var(--border-color);
+  padding: 2rem 1.5rem;
+  text-align: center;
+}
+
+.site-header h1 {
+  font-size: 1.875rem;
+  font-weight: 700;
+}
+
+.site-header p {
+  color: var(--text-muted);
+  margin-top: 0.5rem;
+}
+
+.container {
+  flex: 1;
+  max-width: 700px;
+  width: 100%;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+}
+
+.card h2 {
+  font-size: 1.35rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.code-block {
+  background-color: #090d16;
+  padding: 1rem;
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+  font-family: monospace;
+  color: #38bdf8;
+  overflow-x: auto;
+}
+
+.status-badge {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+.status-badge.success {
+  background-color: var(--success-bg);
+  border: 1px solid var(--success-border);
+  color: #4ade80;
+}
+
+.warning-card {
+  border-color: var(--warning-border);
+  background-color: rgba(30, 41, 59, 0.9);
+}
+
+.warning-card h2 {
+  color: #f87171;
+}
+
+.warning-card ul {
+  padding-left: 1.25rem;
+}
+
+.warning-card li {
+  margin-bottom: 0.5rem;
+  color: #fca5a5;
+}
+
+.demo-box {
+  background-color: #0f172a;
+  border: 1px dashed var(--primary-color);
+  padding: 1rem;
+  border-radius: 6px;
+}
+
+.form-group {
+  margin-bottom: 1.25rem;
+}
+
+label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.required {
+  color: #ef4444;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background-color: #0f172a;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  color: var(--text-main);
+  font-size: 1rem;
+}
+
+input:focus-visible {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.3);
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: var(--primary-hover);
+}
+
+.responsive-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-top: 1rem;
+}
+
+.site-footer {
+  text-align: center;
+  padding: 1.5rem;
+  border-top: 1px solid var(--border-color);
+  color: var(--text-muted);
+  font-size: 0.875rem;
+  margin-top: auto;
+}
