@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Question 1: Online Symposium Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <h1>Annual Tech Symposium 2026</h1>
+    <p>Register below to participate in keynotes, workshops, and competitions.</p>
+  </header>
+
+  <main class="container">
+    <section class="card" aria-labelledby="form-heading">
+      <h2 id="form-heading">Symposium Registration Form</h2>
+      
+      <form action="/register" method="POST" id="registrationForm">
+        <fieldset>
+          <legend>Participant Information</legend>
+          
+          <div class="form-group">
+            <label for="student-name">Full Name <span class="required">*</span></label>
+            <input 
+              type="text" 
+              id="student-name" 
+              name="name" 
+              required 
+              autocomplete="name" 
+              placeholder="e.g., Alex Johnson"
+              aria-required="true">
+          </div>
+
+          <div class="form-group">
+            <label for="student-email">Email Address <span class="required">*</span></label>
+            <input 
+              type="email" 
+              id="student-email" 
+              name="email" 
+              required 
+              autocomplete="email" 
+              placeholder="e.g., alex@university.edu"
+              aria-required="true">
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" id="submitBtn">Submit Registration</button>
+          </div>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 SIMATS Engineering. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
