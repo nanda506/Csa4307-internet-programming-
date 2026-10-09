@@ -8,9 +8,9 @@
 
 ## Student Declaration & Code of Conduct
 > **Declaration:**  
-> I, **Y.Sai Mohith** (Register Number: **192372210**), certify that this submission is my original work and that I have adhered to the guidelines specified for this assessment. I understand that any violation of academic integrity rules will result in disciplinary action.
+> I, **K.Nanda Kishore** (Register Number: **192411161**), certify that this submission is my original work and that I have adhered to the guidelines specified for this assessment. I understand that any violation of academic integrity rules will result in disciplinary action.
 > 
-> **Student Signature:** Y.Sai Mohith (Reg No: 192372210)
+> **Student Signature:** K.Nanda Kishore  (Reg No: 192411161)
 
 ---
 
