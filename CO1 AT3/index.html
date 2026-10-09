@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CO1 AT3 - InnovateX Startup Application</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header with Semantic <nav> (Snippet 3 Option B) -->
+  <header class="site-header">
+    <div class="header-content">
+      <h1>InnovateX Startup Portal</h1>
+      <nav class="main-nav" aria-label="Main Navigation">
+        <ul>
+          <li><a href="#video-section">Promo Video</a></li>
+          <li><a href="#register">Registration</a></li>
+          <li><a href="#xml-data">XML Config</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    
+    <!-- HTML5 Video Embedding (Snippet 1 Option B) -->
+    <section id="video-section" class="card" aria-labelledby="video-heading">
+      <h2 id="video-heading">1. Promotional Video (&lt;video&gt; tag)</h2>
+      <p class="subtitle">Correct Option: <code>&lt;video src="video.mp4" controls&gt;&lt;/video&gt;</code></p>
+      <div class="video-container">
+        <video src="video.mp4" controls width="100%" poster="https://via.placeholder.com/800x450?text=Startup+Promotional+Video">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </section>
+
+    <!-- Form Submission Method POST (Snippet 2 Option B) -->
+    <section id="register" class="card" aria-labelledby="register-heading">
+      <h2 id="register-heading">2. Secure Form Registration (POST Method)</h2>
+      <p class="subtitle">Correct Option: <code>POST</code> method for payload security over HTTPS</p>
+
+      <form action="https://startup.example.com/api/register" method="POST" autocomplete="on">
+        <div class="form-group">
+          <label for="reg-name">Full Name <span class="required">*</span></label>
+          <input type="text" id="reg-name" name="name" required autocomplete="name" placeholder="e.g. Jane Doe">
+        </div>
+
+        <div class="form-group">
+          <label for="reg-email">Email Address <span class="required">*</span></label>
+          <input type="email" id="reg-email" name="email" required autocomplete="email" placeholder="e.g. jane@startup.com">
+        </div>
+
+        <div class="form-group">
+          <label for="reg-password">Password <span class="required">*</span></label>
+          <input type="password" id="reg-password" name="password" required autocomplete="new-password" placeholder="Create password">
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn-primary">Submit via POST Method</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- XML Syntax & Protocol (Snippet 4 & 5 Option B) -->
+    <section id="xml-data" class="card" aria-labelledby="xml-heading">
+      <h2 id="xml-heading">3. XML Syntax & Communication Protocol</h2>
+      <div class="info-block">
+        <p><strong>Web Communication Protocol:</strong> <code>HTTP / HTTPS</code> (Option B)</p>
+      </div>
+
+      <h3>Well-Formed XML Syntax (Option B):</h3>
+      <pre class="code-block"><code>&lt;note&gt;
+  &lt;to&gt;User&lt;/to&gt;
+  &lt;from&gt;Admin&lt;/from&gt;
+&lt;/note&gt;</code></pre>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 InnovateX Tech Startup. All rights reserved. (CO-1 AT3 Submission)</p>
+  </footer>
+
+</body>
+</html>
